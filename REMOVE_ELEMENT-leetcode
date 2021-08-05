@@ -1,0 +1,9 @@
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:           
+        nums[:]= [x for x in nums if x!=val]
+        return len(nums)
+        
+        
+        
+ To change the existing list instead creating a new one we use nums[:] 
+ By this we can perform inplace removal
