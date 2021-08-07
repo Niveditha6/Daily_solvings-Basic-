@@ -1,0 +1,9 @@
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        nums.append(target)
+        nums.sort()
+        return nums.index(target)
+        
+        
+        
+ //Here we can go for the basic approach that is binary search or in python we could simply append the given value to the list and return the index of the target value
